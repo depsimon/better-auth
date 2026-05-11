@@ -1,5 +1,15 @@
 # @better-auth/api-key
 
+## 1.6.11
+
+### Patch Changes
+
+- [#9505](https://github.com/better-auth/better-auth/pull/9505) [`b039985`](https://github.com/better-auth/better-auth/commit/b03998586af6c47b2c9b6cdd556d36416bc71711) Thanks [@Kvizas](https://github.com/Kvizas)! - API key requests that exceed the configured rate limit now return HTTP 429 (Too Many Requests) instead of HTTP 401 (Unauthorized), so clients can distinguish throttling from authentication failures.
+
+- Updated dependencies [[`e21d744`](https://github.com/better-auth/better-auth/commit/e21d744987476c20a934c79ef226fe6a5f468e22)]:
+  - @better-auth/core@1.6.11
+  - better-auth@1.6.11
+
 ## 1.6.10
 
 ### Patch Changes
